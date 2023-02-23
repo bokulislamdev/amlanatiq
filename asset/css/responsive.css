@@ -1,0 +1,153 @@
+@media only screen and (max-width:1199px) {}
+
+
+@media only screen and (max-width:991px) {
+
+    .menubar > ul > li > a {
+        padding: 5px !important;
+    }
+    .help-col{
+        width: 33.33%;
+    }
+
+
+}
+
+@media only screen and (max-width:767px) {
+
+    .logo {
+        display: inline-block;
+    }
+
+    .sub-btn a span {
+        padding: 0 6px;
+    }
+
+    .sub-menu > a {
+        font-size: 14px;
+    }
+
+  
+
+    .copyright-menu {
+        text-align: center;
+    }
+
+    .copyright p {
+        text-align: center;
+    }
+    .why-section h3 {
+    font-size: 40px;
+    }
+    .service-head h3{
+        font-size: 40px;
+    }
+    .service-box h6 {
+    font-size: 20px;
+    }
+    .about-text h4{
+        font-size: 40px;
+    }
+    .about-text p{
+        font-size: 18px;
+    }
+    .about-text a {
+    font-size: 16px;
+    }
+    .footer-top h4{
+        font-size: 25px;
+    }
+    .banner-content h1 {
+    font-size: 40px;
+    }
+    .page-banner h2{
+        font-size: 40px;
+    }
+    .about-page-box h3{
+        font-size: 40px;
+    }
+    .about-page-box h6 {
+    font-size: 18px;
+    }
+    .about-page-box ul li {
+    font-size: 18px;
+    }
+    .trams-condition h3{
+        font-size: 40px;
+    }
+    .service-page-box h4{
+        font-size: 30px;
+    }
+    .product-box h6 {
+    font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:575px) {
+    body {
+        font-size: 14px;
+    }
+
+
+    .footer-head h6 {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-head ul li a {
+        font-size: 14px;
+    }
+
+    .mobileAdd {
+        left: 0 !important;
+        width: 100%;
+    }
+     .help-col{
+        width: 50%;
+    }
+    .banner-content h1 {
+    font-size: 35px;
+    line-height: 45px;
+    }
+    .banner-content .banner-btn a {
+    font-size: 16px;
+    padding: 8px 20px;
+
+    }
+    .why-section h3 {
+    font-size: 30px;
+    }
+    .service-head h3{
+        font-size: 30px;
+    }
+    .about-text h4{
+        font-size: 30px;
+    }
+    header .fa-bars {
+    font-size: 18px;
+    }
+    .page-banner h2 {
+    font-size: 35px;
+    }
+    .about-page-box h3{
+        font-size: 35px;
+    }
+    .about-page-box h6{
+        font-size: 16px;
+    }
+
+   .about-page-box ul li{
+        font-size: 16px;
+    }
+    .trams-condition h3{
+        font-size: 30px;
+    }
+    .service-page-box h4{
+        font-size: 25px;
+    }
+
+
+
+}

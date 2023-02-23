@@ -1,0 +1,139 @@
+:root {
+    --pc: #424242;
+    --pc2: #616161;
+    --sc: #1C1963;
+    --tc: #285767;
+    --wc: #ffffff;
+    --bc: #000000;
+    --gc: #cccccc;
+    --yc: #FFA000;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--pc);
+    background: #F5F5F5;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+p {
+    line-height: 24px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pc);
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--pc);
+}
+
+button {
+    border: none;
+}
+
+
+.custom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+
+.custom-row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.section-title h4 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    color: var(--pc2);
+}
+.section-title h4.after::after{
+    content: '';
+    display: block;
+    width: 84px;
+    height: 2px;
+    background: var(--pc2);
+    margin: 0 auto;
+        margin-top: 10px;
+}
+
+.section-title p {
+    max-width: 926px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+    color: var(--pc2);
+}
+.dark-title.section-title h4{
+    color: var(--wc);
+}
+.dark-title.section-title p{
+    color: var(--wc);
+}
+.client-box{
+    background: #434183;
+    border-radius: 15px;
+    padding: 15px;
+}
+.client-box img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.client-box h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--wc);
+}
+.client-box span{
+    color: #8280AB;
+    font-weight: 500;
+    font-size: 14px;
+}
+.client-box p{
+    color: #E0E0E0;
+}
+.client-box span i{
+    color: var(--yc);
+}
+.client-box span i.bi-star{
+    color: var(--wc);
+}

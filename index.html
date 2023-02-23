@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<html lang="ar" dir="rtl">-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeincu</title>
+    <!--    BOOSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+
+    <!-- FONTAWSOME6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--    BOOSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--    GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--    SLICK SLIDER-->
+    <link rel="stylesheet" href="asset/css/slick.css">
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!--    <link rel="stylesheet" href="asset/css/arabic.css">-->
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!--    HEADER TOP-->
+    <section class="header-top-section py-2">
+        <div class="container-fluid">
+            <div class="menubar">
+                <ul>
+                    <li class="sub-btn">
+                        <a href="#">Help <i class="bi bi-chevron-down"></i></a>
+                        <div class="sub-menu">
+                            <a href="#">help 1</a>
+                            <a href="#">help 2</a>
+                        </div>
+                    </li>
+                    <li class="sub-btn">
+                        <a href="#">USD <i class="bi bi-chevron-down"></i></a>
+                        <div class="sub-menu">
+                            <a href="#">BD</a>
+                            <a href="#">RUPIES</a>
+                        </div>
+                    </li>
+                    <li class="sub-btn">
+                        <a href="#">Language <i class="bi bi-chevron-down"></i></a>
+                        <div class="sub-menu">
+                            <a href="#">Language 1</a>
+                            <a href="#">Language 2</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--    HEADER TOP END-->
+
+    <!--    HEADER SECTION-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12  col-lg-3 p-0">
+                    <div class="logo-box h-100 ps-4">
+                        <div class="logo d-flex justify-content-between align-items-center w-100">
+                            <a href="#">
+                                <img src="asset/images/logo/logo.png" alt="">
+                            </a>
+                            <i class="fa fa-bars d-lg-none" onClick="mobileClick()"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-4 d-none d-lg-block">
+                    <div class="header-search ">
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 pe-4">
+                    <div class="cart-box d-flex align-itmes-center">
+                        <div class="cart-box d-flex align-items-center justify-content-between">
+                            <div class="d-block d-lg-none ">
+                                <i class="fa fa-bars cat_bars"></i>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="#"> <i class="bi bi-cart2"></i> 02 Items </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-person"></i>Favorite </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="bi bi-person"></i> Sign In</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <!--    HEADER SECTION END-->
+
+    <!--    MENUBAR SECTION -->
+    <section class="menubar-section py-2 d-none d-md-block">
+        <div class="container">
+            <div class="menubar">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Training</a>
+                    </li>
+                    <li>
+                        <a href="#">Recruitment</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Condition</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--    MENUBAR SECTION END-->
+
+
+
+
+
+    <!--    MOBILE MENU-->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-3">
+                <a href="#">
+                    <img src="asset/images/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            About us
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Download
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Course
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Notice
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            E-Book
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Contact
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Sign In
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+            <!--
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        All Category
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Lip Gloss</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Body Lotion</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Cream</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>Garnier</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+-->
+
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--    MOBILE MENU END-->
+
+    <!-- BANNER PART START -->
+    <div class="slider-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="home-category h-100">
+                        <h6>Categories</h6>
+
+                        <a href="#">Home Made Foods</a>
+                        <a href="#">Handmade Recipes</a>
+                        <a href="#">Readymade Foods</a>
+                        <a href="#">Traditional Itmes</a>
+                        <a href="#">Foods for Kids</a>
+                        <a href="#">Chocolate</a>
+                        <a href="#">Hand Made Gift</a>
+                        <a href="#">Kozi Samak</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="banner h-100">
+                        <div class="home_slide">
+                            <div class="banner-sider-image">
+                                <a href="#">
+                                    <img src="asset/images/photos/slider.png" alt="">
+                                </a>
+                            </div>
+                            <div class="banner-sider-image">
+                                <a href="#">
+                                    <img src="asset/images/photos/slider.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER PART END -->
+
+    <!--    HOT PRODUCT-->
+    <section class="hot-product-section">
+        <div class="container">
+            <div class="row px-2">
+                <div class="col-12 col-sm-6 col-lg-3 pb-2 pb-lg-0 p-2">
+                    <div class="hot-product-box">
+                        <a href="#">
+                            <img src="asset/images/products/hot-product-1.png" alt="product">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 pb-2 pb-lg-0 p-2">
+                    <div class="hot-product-box">
+                        <a href="#">
+                            <img src="asset/images/products/hot-product-1.png" alt="product">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 pb-2 pb-lg-0 p-2">
+                    <div class="hot-product-box">
+                        <a href="#">
+                            <img src="asset/images/products/hot-product-1.png" alt="product">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 pb-2 pb-lg-0 p-2">
+                    <div class="hot-product-box">
+                        <a href="#">
+                            <img src="asset/images/products/hot-product-1.png" alt="product">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    HOT PRODUCT END-->
+
+
+    <!--    PRODUCT SECTION-->
+    <section class="product-section py-5">
+        <div class="container">
+            <div class="product-head d-flex align-items-center justify-content-between">
+                <h6>Home made food</h6>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-1.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-2.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-3.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-4.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-1.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-2.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-3.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="product-box">
+                        <div class="product-image pb-2">
+                            <a href="#">
+                                <img src="asset/images/products/product-4.png" alt="product">
+                            </a>
+                            <span>15% Off</span>
+                        </div>
+
+                        <div class="product-title">
+                            <a href="#">Special Tharid</a>
+                            <span><i class="bi bi-star-fill"></i> 120 ( 100+)</span>
+                        </div>
+
+                        <div class="product-price">
+                            <span>SAR <b>20.00</b></span>
+                        </div>
+                        <p><img src="asset/images/icons/truck.png" alt="">Fasted Delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    PRODUCT SECTION END-->
+
+    <!--    SERVICE SECTION-->
+    <section class="service-section py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h4 class="after">Our Services</h4>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/2.png" alt="service">
+                        <h6>Building regional identity</h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/3.png" alt="service">
+                        <h6>Territory marketing
+                        </h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/4.png" alt="service">
+                        <h6>Regional sustainability according to the Kingdom's Vision 2030</h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/5.png" alt="service">
+                        <h6>Shifting from pastoral to developmental and building convictions</h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/6.png" alt="service">
+                        <h6>Organizing events and creating opportunities
+                        </h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/7.png" alt="service">
+                        <h6>Partnership with financing and investment agencies</h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/8.png" alt="service">
+                        <h6>Improving and facilitating the invest-ment environment</h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-4">
+                    <div class="service-box h-100">
+                        <img src="asset/images/services/1.png" alt="service">
+                        <h6>Vision projects and economics</h6>
+                        <a href="#">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    SERVICE SECTION END-->
+
+    <!--    INVESTMENT SECTION-->
+    <section class="investment-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <h6>
+                        Are you looking for a <span>investment</span> or to get <span>opportunity</span> to invest?
+                    </h6>
+
+                    <div class="py-3">
+                        <p>
+                            Almanatiq Incubator is a unique entity based on creativity and excellence with a global thought consisting of a system of local, regional and international partnerships concerned with supporting the regional development sector and its related activities. In improving the investment environment and creating an environment that supports and encourages the ability to have positive and mutual relations through devising effective marketing methods and channels to communicate with the target parties and the relevant authorities.
+                        </p>
+                    </div>
+
+                    <div class="invest-btn">
+                        <a href="#">Looking For Investor</a>
+                        <a href="#">Looking For Opportunity</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img src="asset/images/photos/invest.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--    INVESTMENT SECTION END-->
+
+    <!--    ADVISOR SECTION-->
+    <section class="advisor-section py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h4>Advisors & Specialist</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. Neque lorem amet diam sollicitudin est sit. Cursus mi ac egestas scelerisque venenatis id cras porta. Quis eget lectus magna habitasse habitant elit tellus.
+                </p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                    <div class="advisor-box d-flex">
+                        <div class="advisor-left">
+                            <a href="#">
+                                <img src="asset/images/photos/advisor-2.png" alt="Advisor">
+                            </a>
+                        </div>
+                        <div class="advisor-right">
+                            <a href="#">Maktom Al Naser</a>
+                            <h6>Cheif Finance Officer</h6>
+                            <p>
+                                AB International Finance
+                                Tabuk, Riadah, Saudi Arabia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                    <div class="advisor-box d-flex">
+                        <div class="advisor-left">
+                            <a href="#">
+                                <img src="asset/images/photos/advisor-3.png" alt="Advisor">
+                            </a>
+                        </div>
+                        <div class="advisor-right">
+                            <a href="#">Al Amin Hossain</a>
+                            <h6>Micro Finance Advisor</h6>
+                            <p>
+                                AB International Finance
+                                Tabuk, Riadah, Saudi Arabia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                    <div class="advisor-box d-flex">
+                        <div class="advisor-left">
+                            <a href="#">
+                                <img src="asset/images/photos/advisor-4.png" alt="Advisor">
+                            </a>
+                        </div>
+                        <div class="advisor-right">
+                            <a href="#">Sakawath Hossain</a>
+                            <h6>Finance Advisor</h6>
+                            <p>
+                                AB International Finance
+                                Tabuk, Riadah, Saudi Arabia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                    <div class="advisor-box d-flex">
+                        <div class="advisor-left">
+                            <a href="#">
+                                <img src="asset/images/photos/advisor-5.png" alt="Advisor">
+                            </a>
+                        </div>
+                        <div class="advisor-right">
+                            <a href="#">Shahajahan Ali</a>
+                            <h6>Event Manager</h6>
+                            <p>
+                                AB International Finance
+                                Tabuk, Riadah, Saudi Arabia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                    <div class="advisor-box d-flex">
+                        <div class="advisor-left">
+                            <a href="#">
+                                <img src="asset/images/photos/advisor-6.png" alt="Advisor">
+                            </a>
+                        </div>
+                        <div class="advisor-right">
+                            <a href="#">Mostafa Khan</a>
+                            <h6>Consultant</h6>
+                            <p>
+                                AB International Finance
+                                Tabuk, Riadah, Saudi Arabia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                    <div class="advisor-box d-flex">
+                        <div class="advisor-left">
+                            <a href="#">
+                                <img src="asset/images/photos/advisor-1.png" alt="Advisor">
+                            </a>
+                        </div>
+                        <div class="advisor-right">
+                            <a href="#">Shekh Mohammad Ali</a>
+                            <h6>CEO & Founder</h6>
+                            <p>
+                                AB International Finance
+                                Tabuk, Riadah, Saudi Arabia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--    ADVISOR SECTION END-->
+
+
+    <!--    ABOUT SECTION-->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="about-img">
+                        <img src="asset/images/photos/about.png" alt="about">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <div class="about-text">
+                        <h4>About Us</h4>
+                        <div class="py-4">
+                            <p>
+                                Almanatiq Incubator is a unique entity based on creativity and excellence with a global thought consisting of a system of local, regional and international partnerships concerned with supporting the regional development sector and its related activities. In improving the investment environment and creating an environment that supports and encourages the ability to have positive and mutual relations through devising effective marketing methods and channels to communicate with the target parties and the relevant authorities.
+                            </p>
+                        </div>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    ABOUT SECTION END-->
+
+    <!--    CLIENT SECTION-->
+    <section class="client-section py-5">
+        <div class="container">
+            <div class="dark-title section-title text-center">
+                <h4>Clients Feedback</h4>
+                <p style="max-width: 555px">
+                    Lorem ipsum dolor sit amet consectetur. Pretium accumsan elementum risus nam neque.
+                </p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="client-box">
+                        <div class="d-flex">
+                            <div class="p-2 flex-shrink-1"><img src="asset/images/photos/client.png" alt=""></div>
+                            <div class="p-2 w-100">
+                                <h6>Karim Jannath</h6>
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                    <span>Finance Officer</span>
+
+                                    <span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sit fusce elementum velit rutrum blandit amet non sit. Sed et pharetra netus adipiscing. Id erat pharetra vitae mattis. Id risus tortor est tristique mi scelerisque nisi tristique.
+                        </p>
+                        <p>
+                            Quam hendrerit vitae cum facilisis faucibus ac. Sodales ultricies at feugiat libero habitant a sed.
+                        </p>
+
+                        <span>25 January 2023</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="client-box">
+                        <div class="d-flex">
+                            <div class="p-2 flex-shrink-1"><img src="asset/images/photos/client-2.png" alt=""></div>
+                            <div class="p-2 w-100">
+                                <h6>Karim Jannath</h6>
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                    <span>Finance Officer</span>
+
+                                    <span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sit fusce elementum velit rutrum blandit amet non sit. Sed et pharetra netus adipiscing. Id erat pharetra vitae mattis. Id risus tortor est tristique mi scelerisque nisi tristique.
+                        </p>
+                        <p>
+                            Quam hendrerit vitae cum facilisis faucibus ac. Sodales ultricies at feugiat libero habitant a sed.
+                        </p>
+
+                        <span>25 January 2023</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="client-box">
+                        <div class="d-flex">
+                            <div class="p-2 flex-shrink-1"><img src="asset/images/photos/client-3.png" alt=""></div>
+                            <div class="p-2 w-100">
+                                <h6>Karim Jannath</h6>
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                    <span>Finance Officer</span>
+
+                                    <span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sit fusce elementum velit rutrum blandit amet non sit. Sed et pharetra netus adipiscing. Id erat pharetra vitae mattis. Id risus tortor est tristique mi scelerisque nisi tristique.
+                        </p>
+                        <p>
+                            Quam hendrerit vitae cum facilisis faucibus ac. Sodales ultricies at feugiat libero habitant a sed.
+                        </p>
+
+                        <span>25 January 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    CLIENT SECTION END-->
+
+
+    <!--    BLOG SECTION-->
+    <section class="blog-section py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h4>Latest Blog</h4>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-4 pb-4 pb-lg-0">
+                    <div class="blog-box">
+                        <img src="asset/images/photos/blog-1.png" alt="Blog">
+
+                        <span>Post at 29 Mar 2023</span>
+                        <h6>The best ways and investment returns for</h6>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <a href="#">Read More ></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4 pb-lg-0">
+                    <div class="blog-box">
+                        <img src="asset/images/photos/blog-2.png" alt="Blog">
+
+                        <span>Post at 29 Mar 2023</span>
+                        <h6>Micro-finance Advisor and Guide line for the startup</h6>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <a href="#">Read More ></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 pb-4 pb-lg-0">
+                    <div class="blog-box">
+                        <img src="asset/images/photos/blog-3.png" alt="Blog">
+
+                        <span>Post at 29 Mar 2023</span>
+                        <h6>Most easiest way to grow your business with us</h6>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <a href="#">Read More ></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    BLOG SECTION END-->
+
+    <!--    FOOTER-->
+    <footer class="py-4">
+        <div class="container pt-5">
+            <div class="footer-main">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="asset/images/logo/logo2.png" alt="">
+                                </a>
+                            </div>
+
+                            <p class="mt-4">
+                                Lorem ipsum dolor sit amet consectetur. Metus vitae consectetur sit laoreet tincidunt pharetra.
+                            </p>
+                            <div class="footer-social">
+                                <h5>Follow us:</h5>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa-solid fa-camera"></i>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <h6>Our Compay</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+
+                                            <a href="#">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Evensts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Training</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blogs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recruitment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Business Policy</a>
+                                        </li>
+                                        <li>
+
+                                            <a href="#">
+                                                Terms & Condition
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Help & support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> FAQ’s</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Site Map</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                        <div class="footer-head">
+                            <h6 class="bottom-border">Contact Info</h6>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact Information</a>
+                                </li>
+                                <li>
+
+                                    <a href="#">Help Center</a>
+                                </li>
+
+                            </ul>
+                            <div class="location-box">
+                                <div class="footer-location">
+                                    <p>
+                                        <i class="bi bi-geo-alt"></i>
+                                        40 B-c, amlanatiq incubator, riadah, saudi arabia
+                                    </p>
+                                </div>
+                                <div class="footer-location">
+                                    <p>
+                                        <i class="bi bi-telephone-plus"></i>
+                                        +960145125487
+                                    </p>
+                                </div>
+                                <div class="footer-location">
+                                    <p>
+                                        <i class="bi bi-envelope"></i>
+                                        info@amlanatiqincubator.com
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright mt-5 pt-4">
+                <p>
+                    Copyright @2023 | All rights reserved by <span>Amlanatiq incubator.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--    FOOTER END-->
+
+
+
+    <!--    JQUERY GOOGLE HOST-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--    SLICK SLIDER-->
+    <script src="asset/js/slick.min.js"></script>
+
+    <script>
+        //        MOBILE MENU
+        function mobileClick() {
+            $("#mobile-menu").toggleClass('mobileAdd');
+            $("#mobileOverlay").toggleClass('mobile-overlay');
+        }
+        //        MOBILE MENU END
+
+        $('.home_slide').slick({
+            dots: false,
+            infinite: true,
+            speed: 800,
+            autoplay: true,
+            slidesToShow: 1,
+            arrows: false,
+            slidesToScroll: 1,
+        });
+
+    </script>
+</body>
+
+</html>
